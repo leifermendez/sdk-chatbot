@@ -1,0 +1,55 @@
+{
+  "functions": {
+    "source": "api"
+  },
+  "hosting": [
+    {
+      "target": "widget",
+      "public": "widget/dist/widget",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "sdk",
+      "public": "sdk/dist",
+      "ignore": [
+        "firebase.json",
+        "index.html",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/main.js"
+        }
+      ]
+    }
+],
+  "hosting_": {
+    "public": "widget/dist/widget",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

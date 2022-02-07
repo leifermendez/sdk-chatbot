@@ -1,0 +1,55 @@
+:host{
+    display: flex;
+    flex: 2;
+    z-index: 0;
+    position: relative;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+.wrapper-inbox{
+    position: relative;
+    height: 330px;
+    overflow-y: auto;
+}
+
+.inbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 100%;
+}
+
+.inbox .send{
+    display: inline-block;
+    padding: 3px 8px;
+    min-width: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 15px;
+
+}
+
+.inbox .send.out{
+    color: white;
+    background-color: #1a1a1a;
+}
+
+.inbox .send.in{
+    color: #1a1a1a;
+    background-color:#c9ffff;
+}
+
+.inbox .align-send-out{
+    display: flex;
+    padding: 0 5px;
+    justify-content: flex-end;
+}
+
+.inbox .align-send-in{
+    padding: 0 5px;
+    display: flex;
+    justify-content: flex-start;
+}

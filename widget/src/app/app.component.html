@@ -1,0 +1,7 @@
+<router-outlet *ngIf="showChat"></router-outlet>
+<div class="wrapper-error" *ngIf="!showChat">
+  <div>
+    <img src="../assets/undraw_warning_cyit.svg" alt="" />
+    <div class="error-text">Error debes proporcioar un cliente [{{showChat}}]</div>
+  </div>
+</div>

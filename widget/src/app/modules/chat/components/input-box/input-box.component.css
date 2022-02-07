@@ -1,0 +1,58 @@
+:host{
+    display: flex;
+    min-height: 50px;
+    padding: 0 7px;
+    z-index: 1;
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+}
+
+.input-box{
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 15px;
+    border-radius: 35px;
+    padding: 10px 15px;
+    width: calc(100% - 10px);
+    background-color: white;
+ 
+}
+
+.input-box .block-body{
+    flex: 5;
+}
+
+.input-box .block-btn{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input-box .text{
+    display: flex;
+    width: 100%;
+    min-height: 25px;
+    font-size: 1rem;
+    outline: none;
+    border:0;
+    overflow:hidden;
+    resize: none;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.input-box .btn-send{
+    cursor: pointer;
+    background-color: transparent;
+    border:0;
+    font-size: 1.35rem;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 15px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

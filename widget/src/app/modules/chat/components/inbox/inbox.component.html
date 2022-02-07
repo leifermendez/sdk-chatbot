@@ -1,0 +1,14 @@
+<perfect-scrollbar class="wrapper-inbox">
+    <div class="inbox">
+        <div *ngFor="let message of messages$ | async">
+            <div class="align-send-in" [ngClass]="{
+                'align-send-in':message.type === 'in',
+                    'align-send-out':message.type === 'out'
+                }">
+                <div class="send  d-flex-vertical d-flex" [class]="message.type">
+                    {{message.text}}
+                </div>
+            </div>
+        </div>
+    </div>
+</perfect-scrollbar>

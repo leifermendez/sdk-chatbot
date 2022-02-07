@@ -1,0 +1,143 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap');
+
+.lm {
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: #fff;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-weight: 600;
+  margin: 15px;
+  transition: all ease 0.2s;
+  border: solid 2px #fff;
+  background-image: url('https://avatars.githubusercontent.com/u/15802366?v=4');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 9999999 !important;
+}
+
+.lm:hover {
+  transition: all ease 0.2s;
+  background-color: #a8dadc;
+}
+.lm .lm-chat{
+  background: white;
+  width: 400px;
+  position: fixed;
+  display: flex;
+  right: 30px;
+  border-radius: 15px;
+  padding: 0;
+  font-weight: 400;
+  min-height: 400px;
+  bottom: 85px;
+  /* box-shadow: 0 0 10px #dddddd; */
+}
+.lm .lm-chat.lm-chat-close{
+  display: none;
+}
+.lm.open .text {
+  display: inline;
+}
+.lm.open .link {
+  display: none;
+}
+.lm.open.save .lm-over-save {
+  display: flex;
+}
+.lm.open.unsave .lm-over-unsave {
+  display: flex;
+}
+.lm .text {
+  display: none;
+  background-color: red;
+}
+.lm a {
+  color: #fff;
+  text-decoration: none;
+}
+.lm .lm-over-error,
+.lm .lm-over-save,
+.lm .lm-over-unsave {
+  transition: all ease 0.2s;
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lm .lm-text {
+  font-size: 1.15rem;
+}
+.lm .lm-btn-zone {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.lm .lm-btn-zone button {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: solid 2px #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.15rem;
+}
+.lm .lm-btn-zone button:hover {
+  border: solid 2px #ef476f;
+}
+.lm .lm-cta-open {
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+.lm-hi {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  color: #000;
+  font-size: 0.85rem;
+  left: -120px;
+  padding: 0.25rem 0.35rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  box-shadow: 0 0 10px #dddddd;
+}
+
+.lm .lm-frame{
+  border: 0;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.lm .lm-frame.lm-frame-close{
+  height: 0 !important;
+  max-height: 0 !important;
+  opacity: 0 !important;
+}
+
+.lm .lm-bold{
+  font-weight: 600;
+}

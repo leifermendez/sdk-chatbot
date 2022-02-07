@@ -1,0 +1,29 @@
+.wrapper-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    /* background-color: #f7f7f7; */
+    height: 390px;
+}
+
+.wrapper-error img{
+    width: 200px;
+}
+
+.wrapper-error div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-error .error-text{
+    padding: 5px;
+    color: white;
+    background-color: #f72585;
+    border-radius: 5px;
+}

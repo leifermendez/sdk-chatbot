@@ -1,0 +1,5 @@
+# Local Netlify folder
+.netlify
+sdk.old/
+node_modules/
+chatbot-account.json

@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "saas-sdk-example"
+  },
+  "targets": {
+    "saas-sdk-example": {
+      "hosting": {
+        "widget": [
+          "saas-sdk-example"
+        ],
+        "sdk": [
+          "saas-sdk"
+        ]
+      }
+    }
+  }
+}

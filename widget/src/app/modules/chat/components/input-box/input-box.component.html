@@ -1,0 +1,10 @@
+<form [formGroup]="formInput" (ngSubmit)="send()" class="input-box d-flex d-flex-vertical">
+    <div class="block-body">
+        <textarea [rows]="rowAuto" formControlName="text" class="text" spellcheck="false" placeholder="¿Puedo ayudarte?" type="text"></textarea>
+    </div>
+    <div class="block-btn">
+        <button class="btn-send" type="submit" [disabled]="formInput.invalid">
+            <i class="uil uil-arrow-up"></i>
+        </button>
+    </div>
+</form>

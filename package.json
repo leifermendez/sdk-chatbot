@@ -1,0 +1,19 @@
+{
+  "name": "sdk-support",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-api": "cd api && cross-env MODE=dev node ./index.js",
+    "dev-widget":"cd widget && npm run start",
+    "dev-sdk":"cd sdk && npm run dev",
+    "step-1-deploy-api":"firebase deploy --only functions",
+    "step-2-build-widget":"cd widget && npm run build",
+    "step-3-deploy-widget":"firebase deploy --only hosting:widget",
+    "step-4-build-sdk":"cd sdk && npm run build",
+    "step-5-deploy-sdk":"firebase deploy --only hosting:sdk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
